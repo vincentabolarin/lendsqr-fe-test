@@ -1,0 +1,93 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    .left {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logoContainer {
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+
+            .link {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .right {
+        box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+        padding: 0 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        form {
+            width: 80%;
+
+            .passwordContainer {
+                position: relative;
+                height: fit-content;
+
+                .showPassword {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    color: var(--primary-color);
+                    font-size: 12px;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+
+            .forgotPassword {
+                color: var(--primary-color);
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                margin: -1rem 0 2rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .left {
+            .logoContainer {
+                top: 2rem;
+                left: 2rem;
+            }
+
+            .loginArtContainer {
+                display: none;
+            }
+        }
+
+        .right {
+            padding: 0 4rem;
+            margin-top: 6rem;
+
+            form {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1024px) {
+    .container {
+        grid-template-columns: 40% 60%;
+    }
+}
