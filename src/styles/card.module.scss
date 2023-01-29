@@ -1,0 +1,29 @@
+.container {
+    width: 240px;
+    height: 160px;
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+
+    .detail {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--gray-1);
+    }
+
+    .count {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+}

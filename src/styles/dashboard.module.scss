@@ -1,0 +1,10 @@
+.mainContent {
+    background-color: var(--background-color);
+    padding: 4rem;
+    height: 100dvh;
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+}
