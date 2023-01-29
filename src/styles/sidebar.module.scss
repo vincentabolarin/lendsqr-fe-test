@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+    grid-template-columns: 283px 1fr;
+
+    .sidebarContainer {
+        padding: 2rem;
+    }
+}

@@ -1,5 +1,6 @@
 :root {
   --primary-color: #39CDCC;
+  --background-color: #E5E5E5;
   --dark-blue: #213F7D;
   --white: #FFF;
   --gray-1: #545F7D;
@@ -39,8 +40,8 @@ button, input[type="submit"] {
   cursor: pointer;
 }
 
-.container > * {
-  padding: 2rem;
+.container {
+  // padding: 2rem;
 }
 
 .heading {
