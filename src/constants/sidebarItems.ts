@@ -1,39 +1,105 @@
-import Users from "src/assets/users.svg";
-import Guarantors from "assets/guarantors.svg";
-import Loans from "..//assets/loans.svg";
-
 const customersMenu = [
   {
     icon: "users",
-    text: "Users",
+    text: "Users"
   },
+  
   {
     icon: "guarantors",
-    text: "Guarantors",
+    text: "Guarantors"
   },
+  
   {
     icon: "loans",
-    text: "Loans",
+    text: "Loans"
   },
+  
+  {
+    icon: "decisionModels",
+    text: "Decision Models"
+  },
+  
+  {
+    icon: "savings",
+    text: "Savings"
+  },
+  
+  {
+    icon: "loanRequests",
+    text: "Loan Requests"
+  },
+  
+  {
+    icon: "whitelist",
+    text: "Whitelist"
+  },
+  
+  {
+    icon: "karma",
+    text: "Karma"
+  }
 ];
+
 const businessesMenu = [
     {
-        icon: "icon",
-        text: "Dashboard"
+        icon: "organization",
+        text: "Organization"
     },
+
     {
-        icon: "icon3",
-        text: "newText"
+        icon: "loanRequests",
+        text: "Loan Products"
+    },
+    
+    {
+        icon: "savingsProducts",
+        text: "Savings Products"
+    },
+
+    {
+        icon: "feesAndCharges",
+        text: "Fees and Charges"
+    },
+
+    {
+        icon: "transactions",
+        text: "Transactions"
+    },
+
+    {
+        icon: "services",
+        text: "Services"
+    },
+
+    {
+        icon: "serviceAccount",
+        text: "Service Account"
+    },
+
+    {
+        icon: "settlements",
+        text: "Settlements"
+    },
+
+    {
+        icon: "reports",
+        text: "Reports"
     }
 ]
 const settingsMenu = [
     {
-        icon: "icon",
-        text: "Dashboard"
+        icon: "preferences",
+        text: "Preferences"
     },
+    
     {
-        icon: "icon3",
-        text: "newText"
+        icon: "feesAndPricing",
+        text: "Fees and Pricing"
+    },
+
+    {
+        icon: "auditLogs",
+        text: "Audit Logs"
     }
 ]
 
