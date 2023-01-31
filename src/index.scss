@@ -1,7 +1,9 @@
 :root {
   --primary-color: #39CDCC;
-  --background-color: #E5E5E5;
+  --background-color: #E5E5E550;
   --dark-blue: #213F7D;
+  --dark-blue-transparent: #213F7D70;
+  --faint-blue: #39CDCC20;
   --white: #FFF;
   --gray-1: #545F7D;
   --gray-1-transparent: #545F7D15;
@@ -38,10 +40,6 @@ button, input[type="submit"] {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-}
-
-.container {
-  // padding: 2rem;
 }
 
 .heading {
