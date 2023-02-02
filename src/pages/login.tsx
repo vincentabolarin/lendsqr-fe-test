@@ -10,17 +10,6 @@ import LogoText from "../assets/lendsqrLogoText.svg";
 import LoginArt from "../assets/loginArt.svg";
 
 const Login = () => {
-
-  const [users, setUsers] = useState(null);
-  const apiUrl = "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users";
-
-  useEffect(() => {
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        setUsers(data);
-      });
-  }, []);
   
   const navigate = useNavigate();
 

@@ -4,6 +4,9 @@
     align-items: center;
     padding: 2rem;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 
     .left {
         display: flex;
