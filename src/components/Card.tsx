@@ -2,7 +2,13 @@ import React from "react";
 
 import styles from "../styles/card.module.scss";
 
-const Card = (props) => {
+interface CardProps {
+    avatar: string;
+    detail: string;
+    count: string;
+}
+
+const Card = (props: CardProps) => {
     const { avatar, detail, count } = props;
     return (
         <div className={styles.container}>

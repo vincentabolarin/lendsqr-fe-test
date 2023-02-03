@@ -1,13 +1,17 @@
 import React from "react";
 import styles from "../styles/sidebar.module.scss";
 
-import { customersMenu, businessesMenu, settingsMenu } from "../constants/sidebarItems.ts";
+import { customersMenu, businessesMenu, settingsMenu } from "../constants/sidebarItems";
 
 import SwitchOrganization from "../assets/switchOrganization.svg";
 import Dropdown from "../assets/dropdown.svg";
 import Dashboard from "../assets/dashboard.svg";
 
-const Sidebar = (props) => {
+interface ChildrenProps {
+  children: any;
+}
+
+const Sidebar = (props: ChildrenProps) => {
     const { children } = props;
     return (
       <div className={`${styles.container} `}>
@@ -24,7 +28,7 @@ const Sidebar = (props) => {
           </div>
 
           <p className={styles.heading}>CUSTOMERS</p>
-          {customersMenu.map((customersMenu, index) => {
+          {customersMenu.map((customersMenu: any, index: number) => {
             return (
               <div className={styles.sidebarItem} key={index}>
                 <img
@@ -37,7 +41,7 @@ const Sidebar = (props) => {
           })}
 
           <p className={styles.heading}>BUSINESSES</p>
-          {businessesMenu.map((businessesMenu, index) => {
+          {businessesMenu.map((businessesMenu: any, index: number) => {
             return (
               <div className={styles.sidebarItem} key={index}>
                 <img
@@ -50,7 +54,7 @@ const Sidebar = (props) => {
           })}
 
           <p className={styles.heading}>SETTINGS</p>
-          {settingsMenu.map((settingsMenu, index) => {
+          {settingsMenu.map((settingsMenu: any, index: number) => {
             return (
               <div className={styles.sidebarItem} key={index}>
                 <img

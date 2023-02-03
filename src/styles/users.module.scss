@@ -1,0 +1,54 @@
+.container {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #FFF;
+
+    table {
+        width: 100%;
+        text-align: left;
+        color: var(--gray-1);
+
+        thead {
+            font-size: 12px;
+            font-weight: 600;
+
+            tr {
+                th {
+                    padding-right: 1rem;
+
+                    span {
+                        margin-right: .5rem;
+                    }
+
+                    img {
+                        width: 16px;
+                        height: 10.67px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            font-size: 14px;
+            font-weight: 400;
+
+            tr, tr * {
+                height: 4rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--dark-blue-transparent-2);
+                }
+
+                td {
+                    padding-right: 1rem;
+
+                    img {
+                        width: 3.33px;
+                        height: 14.44px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

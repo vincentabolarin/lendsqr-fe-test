@@ -5,7 +5,7 @@ import SearchIcon from "../assets/searchIcon.svg";
 import BellIcon from "../assets/bellIcon.svg";
 import Dropdown from "../assets/dropdown.svg";
 
-import Logo from "./Logo.tsx";
+import Logo from "./Logo";
 import { Link } from "react-router-dom";
 
 const Topbar = () => {
