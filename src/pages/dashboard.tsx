@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/dashboard.module.scss";
 
-import Topbar from "../components/Topbar.tsx";
-import Card from "../components/Card.tsx";
+import Topbar from "../components/Topbar";
+import Card from "../components/Card";
+import Users from "../components/Users"
 
 import UsersIcon from "../assets/usersIcon.svg";
 import ActiveUsersIcon from "../assets/activeUsersIcon.svg";
 import UsersWithLoansIcon from "../assets/usersWithLoansIcon.svg";
 import UsersWithSavingsIcon from "../assets/usersWithSavingsIcon.svg";
 
-import Sidebar from "../components/Sidebar.tsx";
+import Sidebar from "../components/Sidebar";
 
 const Dashboard = () => {
 
@@ -54,9 +55,13 @@ const Dashboard = () => {
             <div className={styles.mainContent}>
                 <div className={styles.cards}>
                     <Card avatar={UsersIcon} detail="USERS" count={users.length} />
-                    <Card avatar={ActiveUsersIcon} detail="ACTIVE USERS" count={activeUsersCount} />
+                    <Card avatar={ActiveUsersIcon} detail="ACTIVE USERS" count={users.length} />
                     <Card avatar={UsersWithLoansIcon} detail="USERS WITH LOANS" count={users.length} />
                     <Card avatar={UsersWithSavingsIcon} detail="USERS WITH SAVINGS" count={users.length} />
+                </div>
+                
+                <div className={styles.users}>
+                    <Users />
                 </div>
             </div>
         </Sidebar>  
